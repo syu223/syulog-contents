@@ -1,0 +1,15 @@
+:root {
+  --nagoya-background-color: #initial;
+
+  --nagoya-container-background-color: #999999;
+  --nagoya-footer-background-color: #dcdcdc;
+  --nagoya-link-color: #0056b3;
+  --nagoya-thead-background-color: #eeeeee;
+
+  --nagoya-site-title-color: initial;
+  --nagoya-site-description-color: initial;
+
+  --nagoya-default-background-color: #f5f5f5;
+
+}
+

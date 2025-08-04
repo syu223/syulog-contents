@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on 技術log</title>
+    <link>https://d2atxiswdqq4o3.cloudfront.net/tags/cloud/</link>
+    <description>Recent content in Cloud on 技術log</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="https://d2atxiswdqq4o3.cloudfront.net/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS構成と最適化</title>
+      <link>https://d2atxiswdqq4o3.cloudfront.net/posts/tech-logs/aws/first-article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://d2atxiswdqq4o3.cloudfront.net/posts/tech-logs/aws/first-article/</guid>
+      <description>&lt;p&gt;内容を書いてください&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

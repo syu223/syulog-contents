@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 技術log</title>
+    <link>https://d2atxiswdqq4o3.cloudfront.net/posts/</link>
+    <description>Recent content in Posts on 技術log</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 20 Jul 2025 09:27:42 +0000</lastBuildDate>
+    <atom:link href="https://d2atxiswdqq4o3.cloudfront.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Article</title>
+      <link>https://d2atxiswdqq4o3.cloudfront.net/posts/tech-logs/aws/new-article/</link>
+      <pubDate>Sun, 20 Jul 2025 09:27:42 +0000</pubDate>
+      <guid>https://d2atxiswdqq4o3.cloudfront.net/posts/tech-logs/aws/new-article/</guid>
+      <description>&lt;p&gt;AWSのカテゴリを扱います&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AWS構成と最適化</title>
+      <link>https://d2atxiswdqq4o3.cloudfront.net/posts/tech-logs/aws/first-article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://d2atxiswdqq4o3.cloudfront.net/posts/tech-logs/aws/first-article/</guid>
+      <description>&lt;p&gt;内容を書いてください&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

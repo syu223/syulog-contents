@@ -1,0 +1,39 @@
+header#top {
+  min-height: 260px; /* もとの180px → 大きめに調整 */
+  background-size: cover;    /* 要素にフィットさせて切り取られないようにする */
+  background-position: center center; /* 中央に画像の主題を持ってくる */
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* 中央揃え */
+}
+
+#header-grid {
+  display: grid;
+  margin: 0 auto;           /* グリッド全体を中央揃え */
+  padding: 48px 12px 0;
+}
+
+#site-title {
+  text-align: center;
+  margin: 0 auto;
+}
+header#top #site-title {
+  margin: 0;
+  align-self: end;
+  text-align: center;
+  line-height: 1.5;
+  word-spacing: -2px;
+  font-size: 48px;                     /* デフォルト32px → 大きく */
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* 影で視認性アップ */
+}
+
+header#top #description {
+  margin: 0;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 24px;                     /* デフォルト18px → 読みやすく拡大 */
+  font-weight: 500;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>このサイトについて on 技術log</title>
+    <link>https://d2atxiswdqq4o3.cloudfront.net/posts/about/</link>
+    <description>Recent content in このサイトについて on 技術log</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="https://d2atxiswdqq4o3.cloudfront.net/posts/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>サイトの構成</title>
+      <link>https://d2atxiswdqq4o3.cloudfront.net/posts/about/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://d2atxiswdqq4o3.cloudfront.net/posts/about/architecture/</guid>
+      <description>&lt;p&gt;本記事ではサイトの構成について記載しています。&lt;/p&gt;&#xA;&lt;h3 id=&#34;アーキテクチャ&#34;&gt;アーキテクチャ&lt;/h3&gt;&#xA;&lt;p&gt;・EC2インスタンスをローカル環境にTerraformを使って構成管理を行っており、&#xA;SSGにはHugoを使用しています。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
