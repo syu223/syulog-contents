@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Search on 技術log</title>
-    <link>https://d2atxiswdqq4o3.cloudfront.net/search/</link>
+    <link>http://3.112.47.40:1313/search/</link>
     <description>Recent content in Search on 技術log</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <atom:link href="https://d2atxiswdqq4o3.cloudfront.net/search/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://3.112.47.40:1313/search/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,24 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>タグ on 技術log</title>
-    <link>https://d2atxiswdqq4o3.cloudfront.net/tags/</link>
+    <link>http://3.112.47.40:1313/tags/</link>
     <description>Recent content in タグ on 技術log</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <atom:link href="https://d2atxiswdqq4o3.cloudfront.net/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Automation</title>
-      <link>https://d2atxiswdqq4o3.cloudfront.net/tags/automation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d2atxiswdqq4o3.cloudfront.net/tags/automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>https://d2atxiswdqq4o3.cloudfront.net/tags/cloud/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://d2atxiswdqq4o3.cloudfront.net/tags/cloud/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://3.112.47.40:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

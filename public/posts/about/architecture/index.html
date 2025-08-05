@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="ja" itemscope itemtype="https://schema.org/BlogPosting">
-  <head prefix="og: https://ogp.me/ns#">
+  <head prefix="og: https://ogp.me/ns#"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, viewport-fit=cover">
 
@@ -11,12 +11,12 @@
 <title>サイトの構成</title>
 
   <meta name="description" content="本記事ではサイトの構成について記載しています。
-アーキテクチャ ・EC2インスタンスをローカル環境にTerraformを使って構成管理を行っており、 SSGにはHugoを使用しています。">
+使用サービス・構成 ・Terraformを使って構築・管理を行っており、コンテンツ作成のSSGにHugoを使用しています。">
 
 
 <meta name="generator" content="Hugo 0.148.0">
 
-<link rel="canonical" href="https://d2atxiswdqq4o3.cloudfront.net/posts/about/architecture/">
+<link rel="canonical" href="http://3.112.47.40:1313/posts/about/architecture/">
 
 
   
@@ -56,11 +56,11 @@
 
 
   <meta property="og:description" content="本記事ではサイトの構成について記載しています。
-アーキテクチャ ・EC2インスタンスをローカル環境にTerraformを使って構成管理を行っており、 SSGにはHugoを使用しています。">
+使用サービス・構成 ・Terraformを使って構築・管理を行っており、コンテンツ作成のSSGにHugoを使用しています。">
 
-<meta property="og:url" content="https://d2atxiswdqq4o3.cloudfront.net/posts/about/architecture/">
+<meta property="og:url" content="http://3.112.47.40:1313/posts/about/architecture/">
 
-  <meta property="og:image" content="https://d2atxiswdqq4o3.cloudfront.net/kousei.png">
+  <meta property="og:image" content="http://3.112.47.40:1313/kousei.png">
 
 
     
@@ -68,7 +68,7 @@
 
 
   <meta itemprop="description" content="本記事ではサイトの構成について記載しています。
-アーキテクチャ ・EC2インスタンスをローカル環境にTerraformを使って構成管理を行っており、 SSGにはHugoを使用しています。">
+使用サービス・構成 ・Terraformを使って構築・管理を行っており、コンテンツ作成のSSGにHugoを使用しています。">
 
 
 
@@ -77,9 +77,9 @@
   
 
 
-  <meta itemprop="image" content="https://d2atxiswdqq4o3.cloudfront.net/kousei.png">
+  <meta itemprop="image" content="http://3.112.47.40:1313/kousei.png">
 
-<link itemprop="url" href="https://d2atxiswdqq4o3.cloudfront.net/posts/about/architecture/">
+<link itemprop="url" href="http://3.112.47.40:1313/posts/about/architecture/">
 
     
   
@@ -195,11 +195,13 @@
   <div class="body">
     
       <p>本記事ではサイトの構成について記載しています。</p>
-<h3 id="アーキテクチャ">アーキテクチャ</h3>
-<p>・EC2インスタンスをローカル環境にTerraformを使って構成管理を行っており、
-SSGにはHugoを使用しています。</p>
+<h3 id="使用サービス構成">使用サービス・構成</h3>
+<p>・Terraformを使って構築・管理を行っており、コンテンツ作成のSSGにHugoを使用しています。</p>
+<p>・Github ActionsでCI/CDを構築しており、以下の２つのワークフローとなっています。</p>
+<p>　　①featureブランチへのpushをトリガーにplanの自動実行し問題がなければPRを作成する。<br>
+　 　②PRにコメントされたplan結果を確認し、mainブランチへマージすることでapplyを実行する。</p>
 <p>・AWSサービスの基本構成としては、S3に配置したコンテンツをCloudfrontで配信しています。
-　独自ドメインのゾーンをRoute53で管理し、ACMにて証明書を管理しTLS化させます。</p>
+　独自ドメインゾーンをRoute53で管理し、ACMにて証明書を管理しTLS化させています。</p>
 <p>
   <img src="kousei.png" alt="アーキテクチャ">
 
@@ -248,13 +250,6 @@ SSGにはHugoを使用しています。</p>
     
     
     
-      <nav class="prev-next">
-        
-          <a class="next" href="/posts/tech-logs/aws/first-article/" title="次の記事: AWS構成と最適化">AWS構成と最適化</a>
-        
-        
-      </nav>
-    
   
 
           
@@ -266,17 +261,6 @@ SSGにはHugoを使用しています。</p>
 
 
 
-
-  <nav class="pane">
-    <header class="component-title">次に読む</header>
-    <ul class="dense">
-      
-        <li><a href="/posts/tech-logs/aws/new-article/">New Article</a></li>
-      
-        <li><a href="/posts/tech-logs/aws/first-article/">AWS構成と最適化</a></li>
-      
-    </ul>
-  </nav>
 
 
           
@@ -340,7 +324,7 @@ SSGにはHugoを使用しています。</p>
         
         <li class="folder">
           <a href="/posts/">
-            Posts (3) 
+            Posts (1) 
           </a>
           
   
@@ -375,53 +359,11 @@ SSGにはHugoを使用しています。</p>
 
 
 
-  
-    
-    
-    
-    
-    
-    
-      <nav class="pane">
-        <header class="component-title">
-          <a href="/tags/">タグ</a>
-        </header>
-        <ul class="tags">
-          
-            <li class="tagged">
-              <a href="/tags/automation/">Automation</a>
-            </li>
-          
-            <li class="tagged">
-              <a href="/tags/cloud/">Cloud</a>
-            </li>
-          
-        </ul>
-        
-      </nav>
-    
-  
-
 
   
   
 
   
-    
-      <nav class="pane">
-        
-          <header class="component-title">
-            <a href="/categories/">カテゴリ</a>
-          </header>
-          <ul>
-            
-              <li>
-                <a href="/categories/aws/">AWS</a>
-              </li>
-            
-          </ul>
-        
-      </nav>
     
   
 
@@ -438,14 +380,6 @@ SSGにはHugoを使用しています。</p>
   <nav class="pane">
     <header class="component-title">最新記事</header>
     <ul class="dense">
-      
-        <li>
-          <a href="/posts/tech-logs/aws/new-article/">New Article</a>
-        </li>
-      
-        <li>
-          <a href="/posts/tech-logs/aws/first-article/">AWS構成と最適化</a>
-        </li>
       
         <li>
           <a href="/posts/about/architecture/">サイトの構成</a>
