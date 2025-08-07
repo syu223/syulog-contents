@@ -1,0 +1,7 @@
+{{ with .Resources.Match "*.{jpg,jpeg,png,gif}" }}
+  {{ $thumb := index (first 1 .) 0 }}
+  <figure class="article-thumbnail">
+    <img src="{{ $thumb.RelPermalink }}" alt="{{ $.Title }}">
+  </figure>
+{{ end }}
+
