@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>アーカイブ on 技術log</title>
+    <title>アーカイブ on syulog Works</title>
     <link>http://3.112.47.40:1313/archives/</link>
-    <description>Recent content in アーカイブ on 技術log</description>
+    <description>Recent content in アーカイブ on syulog Works</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <atom:link href="http://3.112.47.40:1313/archives/index.xml" rel="self" type="application/rss+xml" />
