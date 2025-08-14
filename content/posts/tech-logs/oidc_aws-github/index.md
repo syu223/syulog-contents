@@ -4,7 +4,7 @@ date: 2025-08-01T22:39:04Z
 tags:
   - AWS
   - CI/CD
-draft: true
+#draft: true
 ---
 
 CI/CDを構築する際にOpenID Connectによる連携をしました。  
