@@ -147,7 +147,7 @@
       </form>
       
       <script>
-        (function(){const O='function contains(e,t,n=!0,s="NFKC"){let o=e.text;n||(o=o.toLowerCase(),t=t.map(e=>e.toLowerCase())),o=o.normalize(s);for(let e=0;e<t.length;e++){const n=t[e].normalize(s),i=o.indexOf(n);if(i<0)return!1}return!0}onmessage=function(e){const n=e.data.phrases,s=e.data.caseSensitive,o=e.data.articleBuffer,i=JSON.parse((new TextDecoder).decode(o)),t=[];for(let o=e.data.start;o<e.data.end;o++){const a=i[o];contains(a,n,s)&&t.push({link:a.link,title:a.title})}postMessage(t)}',S=URL.createObjectURL(new Blob([O],{type:"text/javascript"})),A="/data.min.e71a505aa834165aa60fdd7cc474a039e4b4ed946e0e97e1d838ad965dbf44e1.json",l=1,k=16,C=Math.max(1,Math.min(k,Math.ceil(l/8))),x=10,h={"&":"&amp;","'":"&apos;",'"':"&quot;","<":"&lt;",">":"&gt;"};function f(e){return e.replace(/[&'"<>]/g,e=>h[e])}function t(e,...n){let t=e[0];return n.forEach((n,s)=>{t+=f(""+n)+e[s+1]}),t}const d=document.getElementById("search-form"),u=document.getElementById("query"),c=document.getElementById("case"),_=new Promise(e=>{document.readyState==="loading"?document.addEventListener("DOMContentLoaded",()=>e()):e()}),r=_.then(()=>document.getElementById("search-result")),p=fetch(A),g=new Promise((e,t)=>setTimeout(t,x*1e3)),v=Promise.race([p,g]).then(e=>{if(e.ok)return e.arrayBuffer();throw new Error(e.statusText)}).catch(e=>{throw d.outerHTML=t`
+        (function(){const O='function contains(e,t,n=!0,s="NFKC"){let o=e.text;n||(o=o.toLowerCase(),t=t.map(e=>e.toLowerCase())),o=o.normalize(s);for(let e=0;e<t.length;e++){const n=t[e].normalize(s),i=o.indexOf(n);if(i<0)return!1}return!0}onmessage=function(e){const n=e.data.phrases,s=e.data.caseSensitive,o=e.data.articleBuffer,i=JSON.parse((new TextDecoder).decode(o)),t=[];for(let o=e.data.start;o<e.data.end;o++){const a=i[o];contains(a,n,s)&&t.push({link:a.link,title:a.title})}postMessage(t)}',S=URL.createObjectURL(new Blob([O],{type:"text/javascript"})),A="/data.min.e84a4837468b351d7007e62a5c9ccb3b46f7837ef7655de4fc4c8f645329c5ab.json",l=2,k=16,C=Math.max(1,Math.min(k,Math.ceil(l/8))),x=10,h={"&":"&amp;","'":"&apos;",'"':"&quot;","<":"&lt;",">":"&gt;"};function f(e){return e.replace(/[&'"<>]/g,e=>h[e])}function t(e,...n){let t=e[0];return n.forEach((n,s)=>{t+=f(""+n)+e[s+1]}),t}const d=document.getElementById("search-form"),u=document.getElementById("query"),c=document.getElementById("case"),_=new Promise(e=>{document.readyState==="loading"?document.addEventListener("DOMContentLoaded",()=>e()):e()}),r=_.then(()=>document.getElementById("search-result")),p=fetch(A),g=new Promise((e,t)=>setTimeout(t,x*1e3)),v=Promise.race([p,g]).then(e=>{if(e.ok)return e.arrayBuffer();throw new Error(e.statusText)}).catch(e=>{throw d.outerHTML=t`
       <p class="error">${"検索用データファイルをダウンロードできません。"}</p>
     `,e});function b(e=!0){const t=new URL(window.location).searchParams,n=t.getAll("q").join(" "),s=!!+(t.get("c")??0);return e&&(u.value=n,c.checked=s),[n,s]}const j=["	",`
 `,"","","\r"," ",""," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," "," ","　"];function y(e){const n=[];let t="",s=!1;for(let o=0;o<e.length;o++){const i=e[o];j.includes(i)?s?t+=i:t&&(n.push(t),t=""):i==='"'?e[o+1]==='"'?(t+='"',o++):(s=!s,t&&(n.push(t),t="")):t+=i}return t&&n.push(t),n}function m(e){return[...Array(e).keys()]}function w(e,t){const o=Math.floor(e/t),i=e%t,s=[];let n=0;for(let e=0;e<t;e++){const a=n+o+(e<i?1:0);s.push({start:n,end:a}),n=a}return s}let a=null,e=[],i=[];async function E(t,n){e.forEach(e=>e.terminate()),a!==null&&a(),i.forEach(e=>e()),i=[];const c=Math.min(navigator.hardwareConcurrency??1,C);e=m(c).map(()=>new Worker(S));const s=await Promise.race([v.catch(()=>!1),new Promise(e=>{a=()=>e(!1)})]);if(s===!1)return!1;const o=[];for(let t=0;t<e.length;t++){const n=new Promise(n=>{e[t].onmessage=e=>{n(e.data)},i.push(()=>{n(!1)})});o.push(n)}const d=Promise.all(o).then(e=>!e.includes(!1)&&e.flat()),r=w(l,e.length);for(let o=0;o<e.length;o++){const i=s.slice(0),a={phrases:t,caseSensitive:n,start:r[o].start,end:r[o].end,articleBuffer:i};e[o].postMessage(a,[i])}return await d}let o="",s=0[0];async function n(){if(window.Worker){const[n,e]=b(),i=y(n);if(o===n&&e===s)return;if(i.length>0){{const a=await E(i,e);if(a!==!1){const l=await r;let c=`<h2>${i.map(n=>t`<code>${e?n:n.toLowerCase()}</code>`).join("")}</h2>`;a.length>0?(c+=t`
@@ -224,7 +224,7 @@
         
         <li class="folder">
           <a href="/posts/">
-            Posts (1) 
+            Posts (2) 
           </a>
           
   
@@ -259,6 +259,33 @@
 
 
 
+  
+    
+    
+    
+    
+    
+    
+      <nav class="pane">
+        <header class="component-title">
+          <a href="/tags/">タグ</a>
+        </header>
+        <ul class="tags">
+          
+            <li class="tagged">
+              <a href="/tags/aws/">AWS</a>
+            </li>
+          
+            <li class="tagged">
+              <a href="/tags/ci/cd/">CI/CD</a>
+            </li>
+          
+        </ul>
+        
+      </nav>
+    
+  
+
 
   
   
@@ -280,6 +307,10 @@
   <nav class="pane">
     <header class="component-title">最新記事</header>
     <ul class="dense">
+      
+        <li>
+          <a href="/posts/tech-logs/aws/oidc_aws-github/">AWSとGithub ActionsをOpenID Connectで連携させる</a>
+        </li>
       
         <li>
           <a href="/posts/about/architecture/">サイトの構成</a>
