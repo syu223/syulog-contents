@@ -6,14 +6,7 @@
     <description>Recent content in Posts on syulog Works</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 01 Aug 2025 22:39:04 +0000</lastBuildDate>
+    <lastBuildDate></lastBuildDate>
     <atom:link href="http://3.112.47.40:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AWSとGithub ActionsをOpenID Connectで連携させる</title>
-      <link>http://3.112.47.40:1313/posts/tech-logs/aws/oidc_aws-github/</link>
-      <pubDate>Fri, 01 Aug 2025 22:39:04 +0000</pubDate>
-      <guid>http://3.112.47.40:1313/posts/tech-logs/aws/oidc_aws-github/</guid>
-      <description>&lt;p&gt;CI/CDを構築する際にOpenID Connectによる連携をしました。&lt;br&gt;&#xA;その際に得た知識をアウトプットします。&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

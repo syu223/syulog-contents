@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://3.112.47.40:1313/posts/tech-logs/</loc>
+    <lastmod>2025-08-01T22:39:04+00:00</lastmod>
+  </url><url>
     <loc>http://3.112.47.40:1313/posts/about/</loc>
   </url><url>
     <loc>http://3.112.47.40:1313/</loc>
@@ -10,7 +13,7 @@
     <loc>http://3.112.47.40:1313/tags/aws/</loc>
     <lastmod>2025-08-01T22:39:04+00:00</lastmod>
   </url><url>
-    <loc>http://3.112.47.40:1313/posts/tech-logs/aws/oidc_aws-github/</loc>
+    <loc>http://3.112.47.40:1313/posts/tech-logs/oidc_aws-github/</loc>
     <lastmod>2025-08-01T22:39:04+00:00</lastmod>
   </url><url>
     <loc>http://3.112.47.40:1313/tags/ci/cd/</loc>
